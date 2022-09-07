@@ -9,11 +9,11 @@ function Card({ props }) {
         <BootstrapCard.Img variant="top" src={props.providerLogo} />
         <BootstrapCard.Body>
           <BootstrapCard.Title>{props.externalProductId}</BootstrapCard.Title>
+          <BootstrapCard.Text>{props.productCategory}</BootstrapCard.Text>
           <BootstrapCard.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            {props.currencyCode} {props.retailPrice}
           </BootstrapCard.Text>
-
+          <BootstrapCard.Text>{props.created}</BootstrapCard.Text>
           {/* <BootstrapCard.Text>{props}</BootstrapCard.Text>
            */}
           {/* <Button variant="primary">Go somewhere</Button> */}
